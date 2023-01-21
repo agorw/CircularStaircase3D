@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>3D Circular Staircase</title>
+</head>
+<body>
+    <script src="three.js"></script>
+    <script src="CircularStaircase3D.js"></script>
+    <script>
+        var staircase = new CircularStaircase3D();
+        staircase.setStepWidth(60);
+        staircase.setStepHeight(25);
+        staircase.setStairWidth(200);
+        staircase.setStairHeight(240);
+        staircase.calculateNumberOfSteps();
+        staircase.createSteps();
+        staircase.displayStaircase();
+    </script>
+</body>
+</html>
